@@ -1,48 +1,71 @@
-    <div class="container mt-5">
+# Aplikasi Pendaftaran Tiket Konser Online
 
-        <h1 class="text-center">Laporan Aplikasi Pendaftaran Tiket Konser Online</h1>
+## Deskripsi
 
-        <!-- BAB I: PENDAHULUAN -->
-        <h2 class="mt-4">BAB I: PENDAHULUAN</h2>
+Aplikasi ini adalah sistem pendaftaran tiket konser online yang dikembangkan menggunakan CodeIgniter 3, Bootstrap, dan MySQL. Aplikasi menyediakan fungsionalitas pendaftaran pengguna, penampilan daftar konser, serta proses pemesanan dan pembayaran tiket.
 
-        <h3>1.1 Deskripsi Singkat Aplikasi</h3>
-        <p>Aplikasi pendaftaran tiket konser online yang menggunakan CodeIgniter 3, Bootstrap, dan MySQL.</p>
+## Daftar Isi
 
-        <h3>1.2 Ruang Lingkup</h3>
-        <p>Proses pendaftaran pengguna, penampilan daftar konser, pemesanan dan pembayaran tiket.</p>
+- [PENDAHULUAN](#pendahuluan)
+  - [Deskripsi Singkat Aplikasi](#deskripsi-singkat-aplikasi)
+  - [Ruang Lingkup](#ruang-lingkup)
+- [PEMBAHASAN](#pembahasan)
+  - [Analisa Kebutuhan](#analisa-kebutuhan)
+    - [Analisa Kebutuhan User](#analisa-kebutuhan-user)
+    - [Analisa Kebutuhan Sistem](#analisa-kebutuhan-sistem)
+  - [Desain](#desain)
+  - [Implementasi](#implementasi)
+  - [Pengujian Unit](#pengujian-unit)
+- [PENUTUP](#penutup)
+  - [Kesimpulan](#kesimpulan)
+  - [Saran](#saran)
 
-        <!-- BAB II: PEMBAHASAN -->
-        <h2 class="mt-4">BAB II: PEMBAHASAN</h2>
+## PENDAHULUAN
 
-        <h3>2.1 Analisa Kebutuhan</h3>
+### Deskripsi Singkat Aplikasi
 
-        <h4>2.1.1 Analisa Kebutuhan User</h4>
-        <p>Pengunjung, Pengguna Terdaftar, Admin.</p>
+Aplikasi pendaftaran tiket konser online yang menggunakan CodeIgniter 3, Bootstrap, dan MySQL. Tujuan aplikasi adalah memberikan pengguna kemudahan dalam melakukan pendaftaran tiket konser secara online.
 
-        <h4>2.1.2 Analisa Kebutuhan Sistem</h4>
-        <p>Pendaftaran Pengguna, Daftar Konser, Pemesanan Tiket, Manajemen Konser.</p>
+### Ruang Lingkup
 
-        <h3>2.2 Desain</h3>
-        <p>Struktur database dengan tabel "user," "konser," dan "daftar".</p>
+Aplikasi mencakup proses pendaftaran pengguna, penampilan daftar konser, serta proses pemesanan dan pembayaran tiket. Data-data pengguna, daftar konser, dan informasi tiket disimpan dalam database MySQL dengan tiga tabel utama: "user," "konser," dan "daftar."
 
-        <h3>2.3 Implementasi</h3>
-        <p>CodeIgniter 3 sebagai kerangka kerja, Bootstrap untuk front-end.</p>
+## PEMBAHASAN
 
-        <h3>2.4 Pengujian Unit</h3>
-        <p>Uji setiap bagian aplikasi secara terpisah.</p>
+### Analisa Kebutuhan
 
-        <!-- BAB III: PENUTUP -->
-        <h2 class="mt-4">BAB III: PENUTUP</h2>
+#### Analisa Kebutuhan User
 
-        <h3>3.1 Kesimpulan</h3>
-        <p>Aplikasi berhasil memenuhi kebutuhan pengguna.</p>
+Pengguna aplikasi meliputi pengunjung, pengguna terdaftar, dan admin. Masing-masing memiliki hak akses dan fungsi yang berbeda.
 
-        <h3>3.2 Saran</h3>
-        <p>Menambahkan fitur notifikasi, mengoptimalkan antarmuka, meningkatkan keamanan.</p>
+#### Analisa Kebutuhan Sistem
 
-    </div>
+- Pendaftaran Pengguna (User): Fitur ini memungkinkan pengguna untuk membuat akun, melakukan login, dan melihat profil mereka.
+- Daftar Konser: Menampilkan informasi tentang konser yang tersedia, termasuk detail konser, harga tiket, dan jumlah tiket yang tersedia.
+- Pemesanan Tiket: Pengguna dapat memilih konser, memilih jumlah tiket, dan melakukan pembayaran.
+- Manajemen Konser: Admin dapat menambah, mengedit, atau menghapus konser yang akan diadakan.
 
-    <!-- Bootstrap JS (optional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+### Desain
+
+Desain aplikasi melibatkan struktur database dengan tiga tabel utama: "user," "konser," dan "daftar". Hubungan antara tabel tersebut dirancang agar mendukung fungsionalitas pendaftaran dan pemesanan tiket.
+
+### Implementasi
+
+Implementasi menggunakan CodeIgniter 3 sebagai kerangka kerja utama. Front-end dikembangkan menggunakan Bootstrap untuk memastikan antarmuka yang responsif dan menarik.
+
+### Pengujian Unit
+
+Setiap bagian aplikasi, termasuk pendaftaran pengguna, penampilan daftar konser, dan proses pemesanan tiket, akan diuji secara terpisah untuk memastikan fungsionalitas yang tepat.
+
+## PENUTUP
+
+### Kesimpulan
+
+Aplikasi pendaftaran tiket konser online menggunakan CodeIgniter 3, Bootstrap, dan MySQL berhasil dikembangkan dengan memenuhi kebutuhan pengguna. Pengguna dapat dengan mudah mendaftar, melihat konser, dan memesan tiket secara online.
+
+### Saran
+
+Untuk meningkatkan aplikasi ini, beberapa saran yang dapat dipertimbangkan adalah:
+- Menambahkan fitur notifikasi untuk memberi tahu pengguna tentang konser terbaru atau perubahan.
+- Mengoptimalkan antarmuka pengguna untuk pengalaman yang lebih intuitif.
+- Meningkatkan sistem keamanan untuk melindungi data pengguna.
